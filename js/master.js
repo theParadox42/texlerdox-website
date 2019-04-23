@@ -14,6 +14,14 @@ function loadScript(url, callback) {
     body.appendChild(script);
 };
 function doneLoading(){
+    var $nav = $('#navbar');
+    $nav.load("/assets/templates/navbar.html", function(){
+        if(active){
+            var $active = $('#' + active);
+            $active.addClass("active");
+            $active.children().append(' <span class="sr-only">(current)</span>');
+        }
+    });
     console.log("Done loading")
 };
 function loadBootstrap(){

@@ -1,3 +1,10 @@
+/* Bootstrap */
+@import "/css/animations.css";
+@import url("/assets/libraries/bootstrap/css/bootstrap.min.css");
+/* Navbar Font, from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou");
+/* Font Awesome */
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 html, body {
     margin: 0;
     padding: 0;
@@ -5,5 +12,5 @@ html, body {
 }
 body {
     background-color: #ffc73a;
-    background: linear-gradient(to right, #ffc73a , #ff6100);
+    background: linear-gradient(to right, #ffc73a , #ff7723);
 }
