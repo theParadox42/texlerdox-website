@@ -1,5 +1,5 @@
 /* Bootstrap */
-@import "/css/animations.css";
+@import "./animations.css";
 @import url("/assets/libs/bootstrap/css/bootstrap.min.css");
 /* Navbar Font, from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou");

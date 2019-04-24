@@ -15,22 +15,22 @@ function loadScript(url, callback) {
 };
 function doneLoading(){
     console.log("Done loading")
-    $(document).ready(function() { 
-        $(window).on("load", function() { 
-            //insert all your ajax callback code here. 
+    $(document).ready(function() {
+        $(window).on("load", function() {
+            //insert all your ajax callback code here.
             //Which will run only after page is fully loaded in background.
             var $nav = $('#navbar');
             $nav.load("/assets/templates/navbar.html", function(){
-            try {
-                if(active){
-                    var $active = $('#' + active);
-                    $active.addClass("active");
-                    $active.children().append(' <span class="sr-only">(current)</span>');
+                try {
+                    if(active){
+                        var $active = $('#' + active);
+                        $active.addClass("active");
+                        $active.children().append(' <span class="sr-only">(current)</span>');
+                    }
+                } catch(e){
+                    console.log("active was not set")
                 }
-            } catch(e){
-                console.log("active was not set")
-            }
-
+            });
         });
     });
 };
