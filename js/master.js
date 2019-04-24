@@ -14,20 +14,22 @@ function loadScript(url, callback) {
     body.appendChild(script);
 };
 function doneLoading(){
-    var $nav = $('#navbar');
-    $nav.load("/assets/templates/navbar.html", function(){
-        try {
-            if(active){
-                var $active = $('#' + active);
-                $active.addClass("active");
-                $active.children().append(' <span class="sr-only">(current)</span>');
+    $(function(){
+        var $nav = $('#navbar');
+        $nav.load("/assets/templates/navbar.html", function(){
+            try {
+                if(active){
+                    var $active = $('#' + active);
+                    $active.addClass("active");
+                    $active.children().append(' <span class="sr-only">(current)</span>');
+                }
+            } catch(e){
+                console.log("active was not set")
             }
-        } catch(e){
-            console.log("active was not set")
-        }
 
+        });
+        console.log("Done loading")
     });
-    console.log("Done loading")
 };
 function loadBootstrap(){
     loadScript("/assets/libs/bootstrap/js/bootstrap.min.js",doneLoading);
