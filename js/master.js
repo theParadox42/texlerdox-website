@@ -15,10 +15,7 @@ function loadScript(url, callback) {
 };
 function doneLoading(){
     console.log("Done loading")
-    $(document).ready(function() {
-        $(window).on("load", function() {
-            //insert all your ajax callback code here.
-            //Which will run only after page is fully loaded in background.
+        $(document).ready(function(){
             var $nav = $('#navbar');
             $nav.load("/assets/templates/navbar.html", function(){
                 try {
@@ -32,7 +29,6 @@ function doneLoading(){
                 }
             });
         });
-    });
 };
 function loadBootstrap(){
     loadScript("/assets/libs/bootstrap/js/bootstrap.min.js",doneLoading);
