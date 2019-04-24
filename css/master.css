@@ -19,8 +19,7 @@ body {
     border-bottom: 5px solid white;
 }
 .bg-cyan-grad {
-    background-color: #8ad836;
-    background: linear-gradient(to right, #36d8a4, #8ad836);
+    background-color: #3478af;
 
 }
 .bg-dark-grad {
