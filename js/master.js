@@ -16,7 +16,7 @@ function loadScript(url, callback) {
 function doneLoading(){
     console.log("Done loading")
     $(document).ready(function() { 
-        $(window).load(function() { 
+        $(window).on("load", function() { 
             //insert all your ajax callback code here. 
             //Which will run only after page is fully loaded in background.
             var $nav = $('#navbar');
