@@ -25,9 +25,9 @@ function doneLoading(){
     console.log("Done loading")
 };
 function loadBootstrap(){
-    loadScript("/assets/lib/bootstrap/js/bootstrap.min.js",doneLoading);
+    loadScript("/assets/libs/bootstrap/js/bootstrap.min.js",doneLoading);
 };
 function loadPopper() {
-    loadScript("/assets/lib/popper.min.js", loadBootstrap);
+    loadScript("/assets/libs/popper.min.js", loadBootstrap);
 };
-loadScript("/assets/lib/jquery-3.4.0.min.js", loadPopper);
+loadScript("/assets/libs/jquery-3.4.0.min.js", loadPopper);
