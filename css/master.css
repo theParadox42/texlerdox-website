@@ -27,3 +27,9 @@ body {
     background-color: #343a40;
     background: linear-gradient(to right, #2b3d4f, #4c2b17);
 }
+hr {
+    border-width: medium;
+}
+.hr-md {
+    width: 33%;
+}
