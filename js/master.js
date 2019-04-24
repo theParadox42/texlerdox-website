@@ -14,9 +14,13 @@ function loadScript(url, callback) {
     body.appendChild(script);
 };
 function doneLoading(){
-    $(function(){
-        var $nav = $('#navbar');
-        $nav.load("/assets/templates/navbar.html", function(){
+    console.log("Done loading")
+    $(document).ready(function() { 
+        $(window).load(function() { 
+            //insert all your ajax callback code here. 
+            //Which will run only after page is fully loaded in background.
+            var $nav = $('#navbar');
+            $nav.load("/assets/templates/navbar.html", function(){
             try {
                 if(active){
                     var $active = $('#' + active);
@@ -28,7 +32,6 @@ function doneLoading(){
             }
 
         });
-        console.log("Done loading")
     });
 };
 function loadBootstrap(){
