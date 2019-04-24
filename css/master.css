@@ -13,7 +13,15 @@ html, body {
 }
 body {
     background-color: #ffc73a;
-    background: linear-gradient(to right, #ffc73a , #ff7723);
+    background: linear-gradient(to right, #ffc73a, #ff7723);
+}
+.bb-5 {
+    border-bottom: 5px solid white;
+}
+.bg-cyan-grad {
+    background-color: #8ad836;
+    background: linear-gradient(to right, #36d8a4, #8ad836);
+
 }
 .bg-dark-grad {
     background-color: #343a40;

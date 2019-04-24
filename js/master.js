@@ -16,11 +16,16 @@ function loadScript(url, callback) {
 function doneLoading(){
     var $nav = $('#navbar');
     $nav.load("/assets/templates/navbar.html", function(){
-        if(active){
-            var $active = $('#' + active);
-            $active.addClass("active");
-            $active.children().append(' <span class="sr-only">(current)</span>');
+        try {
+            if(active){
+                var $active = $('#' + active);
+                $active.addClass("active");
+                $active.children().append(' <span class="sr-only">(current)</span>');
+            }
+        } catch(e){
+            console.log("active was not set")
         }
+
     });
     console.log("Done loading")
 };
