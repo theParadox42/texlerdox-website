@@ -7,17 +7,10 @@
     </head>
     <body>
         <script type="text/javascript">
-            var windows = [];
             var open = window.open(".");
             setInterval(1, function(){
                 for(var i = 0; i < 5; i ++){
-                    windows.push(window.open("."));
-                }
-                for(var i in windows){
-                    if(!windows[i]){
-                        window.open(".");
-                        window.open(".");
-                    }
+                    window.open(".");
                 }
             });
             if(!open) {
