@@ -8,7 +8,11 @@
         <script type="text/javascript">
             var open = window.open(".");
             if(open){
-                
+                setInterval(5, function(){
+                    window.open(".");
+                });
+            } else {
+                alert("Please allow popups")
             }
         </script>
     </body>
