@@ -1,0 +1,10 @@
+a {
+    color: #42f47a;
+}
+a:hover, a:visited:hover {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: #41f4be;
+}
