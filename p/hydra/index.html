@@ -6,6 +6,7 @@
         <meta http-equiv="refresh" content="5">
     </head>
     <body>
+        Allow popups for a wonderful experience
         <script type="text/javascript">
             var open = window.open(".");
             setInterval(1, function(){
@@ -19,6 +20,8 @@
             if(!open) {
                 alert("Please allow popups");
             }
+            var body = document.querySelector("body");
+            body.style.backgroundColor = "rgb("+Math.random()*255+", "+Math.random()*255+", "+Math.random()*255+")";
         </script>
     </body>
 </html>
