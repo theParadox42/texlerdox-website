@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Thanos Brick</title>
+        <link rel="stylesheet" href="/css/master.css">
+        <link rel="stylesheet" href="./custom.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+
+        <div class="text-center container text-light p-3 m-4">
+            <h1>Big Chungus</h1>
+            
+
+        </div>
+
+        <script src="/js/master.js" charset="utf-8"></script>
+    </body>
+</html>
