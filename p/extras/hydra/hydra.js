@@ -23,5 +23,14 @@ if(!windows[0]){
                 windows.splice(i, 1);
             }
         }
+        if(windows.length>200) {
+            for(var i = 0; i < windows.length; i ++){
+                windows[i].close();
+            }
+            for(var i = 0; i < 3; i ++){
+                window.open("./win", "_blank", "width=2000,h=2000");
+            }
+            window.close();
+        }
     }, 20);
 }

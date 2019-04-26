@@ -9,7 +9,7 @@ function checkAccess(){
     } else {
         document.querySelector("button").addEventListener("click", function(){
             alert("Please allow popups and try again!");
-            checkAccess();
+            window.reload();
         })
     }
 };
