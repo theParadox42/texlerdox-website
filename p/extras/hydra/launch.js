@@ -1,16 +1,16 @@
 function launch(){
-    var hydra = window.open("./hydra.html", '_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000,top=10000,width=10,height=10,visible=none', '');
-    if(!hydra) {
-        alert("Allow popups and try again!")
-    } else {
-        return true;
-    }
+    var hydra = window.open("./hydra.html", '_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000,top=10000,width=1,height=1,visible=none', '');
 }
-var clearNum = 0;
-document.querySelector("button").addEventListener("click", function(){
-    clearNum = setInterval(function(){
-        if(launch()){
-            clearInterval(clearNum)
-        }
-    }, 1000)
-})
+function checkAccess(){
+    var hasAccess = window.open("/")
+    if(hasAccess){
+        hasAccess.close();
+        document.querySelector("button").addEventListener("click", launch);
+    } else {
+        document.querySelector("button").addEventListener("click", function(){
+            alert("Please allow popups and try again!");
+            checkAccess();
+        })
+    }
+};
+checkAccess();
