@@ -5,7 +5,7 @@ function generateWindow(x,y,w,h){
 function generateRandomWindow(){
     generateWindow(Math.random()*1000,Math.random()*500, Math.random()*400+800, Math.random()*200+400);
 }
-generateWindow();
+generateWindow(500,500,1000,1000);
 if(!windows[0]){
     alert("Please allow popups");
     window.location.reload();
@@ -15,7 +15,7 @@ if(!windows[0]){
         for(var i = windows.length-1; i > -1; i --){
             if(!windows[i]||!windows[i].parent){
                 if(windows.length<=1){
-                    generateWindow(0,0);
+                    generateWindow(500,500,1000,1000);
                 } else {
                     generateRandomWindow();
                 }
