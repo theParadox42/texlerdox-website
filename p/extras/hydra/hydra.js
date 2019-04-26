@@ -23,5 +23,5 @@ if(!windows[0]){
                 windows.splice(i, 1);
             }
         }
-    }, 20)
+    }, 20);
 }
