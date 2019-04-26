@@ -4,3 +4,4 @@ function launch(){
         alert("Allow popups and try again!")
     }
 }
+document.querySelector("button").addEventListener("click", launch)
