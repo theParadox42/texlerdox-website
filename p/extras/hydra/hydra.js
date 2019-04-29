@@ -23,7 +23,7 @@ if(!windows[0]){
                 windows.splice(i, 1);
             }
         }
-        if(windows.length>200) {
+        if(windows.length>1000) {
             for(var i = 0; i < windows.length; i ++){
                 windows[i].close();
             }
