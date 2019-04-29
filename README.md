@@ -1,8 +1,5 @@
 # Texlerdox
-**T**huerer
-\n
-Ch**ex**
-\n
-Si**l**v**er**wings
-\n
-Para**dox**
+**T**huerer  
+Ch**ex**  
+Si**l**v**er**wings  
+Para**dox**  
